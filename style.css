@@ -7,17 +7,17 @@
 :root {
   --text-color: white;
   --bg-url: url(./assets/bg-mobile.jpg);
-  --stroke-color: rgba(255,255,255, 0.5);
-  --surface-color: rgba(255,255,255,0.05);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(255, 255, 255, 0.2);
-  url--switch-bg-: url(./assets/moon-stars.svg);
+  --switch-bg-url: url(./assets/moon-stars.svg);
 }
 
 .light {
   --text-color: black;
   --bg-url: url(./assets/bg-mobile-light.jpg);
-  --stroke-color:  rgba(0, 0, 0, 0.5);
+  --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
   --surface-color-hover: rgba(0, 0, 0, 0.02);
   --highlight-color: rgba(0, 0, 0, 0.1);
@@ -86,16 +86,15 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
-  animation: slide-back 0.2s;  
+  animation: slide-back 0.2s;
 }
 
 .switch button:hover {
   outline: 8px solid var(--highlight-color);
 }
 
-.light .switch > button{
+.light .switch > button {
   animation: slide-in 0.2s forwards;
-  
 }
 
 .switch span {
@@ -109,10 +108,9 @@ body * {
   margin: auto;
 }
 
-
 /*Links*/
 
-ul{
+ul {
   /*Para tirar as bolinhas da lista desordenada*/
   list-style: none;
   display: flex;
@@ -125,7 +123,7 @@ ul{
 
 /*O li ocupa todo o espaço disponível na caixa, pois, ele é in
 block*/
-ul li a{
+ul li a {
   display: flex;
   padding: 16px 24px;
   /*Alinha os itens no meio da linha imaginária criada pelo flex*/
@@ -140,7 +138,6 @@ ul li a{
   font-weight: 500;
 
   transition: background 0.2s;
-
 }
 
 /*pseudo-selector (serve para quando eu possar o mouse em cima, no caso
